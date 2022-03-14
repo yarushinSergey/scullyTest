@@ -1,0 +1,102 @@
+:host {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100vh;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+.spacer {
+  flex: 1;
+}
+
+.toolbar {
+  position: relative;
+  flex-shrink: 0;
+  flex-grow: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar .appTitle{
+  margin: 0 32px;
+  padding: 0 5px;
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.toolbar .appTitle:hover{
+  color: lightgray;
+}
+
+.toolbar .menu{
+  right: 25px;
+  position: absolute;
+}
+
+.content {
+  flex-grow: 100;
+  display: flex;
+  position: relative;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+}
+
+a,
+a:visited,
+a:hover {
+  color: #1976d2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #125699;
+}
+
+footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 100px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  line-height: 20px;
+  background-color: #20262b;
+  color: white;
+  justify-content: center;
+}
+
+footer a {
+  display: flex;
+  align-items: center;
+}
